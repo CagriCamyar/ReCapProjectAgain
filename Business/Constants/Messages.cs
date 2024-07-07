@@ -63,6 +63,12 @@ namespace Business.Constants
         public static string ImageLimitInvalid = "Maksimum Kapasitede Fotograf Zaten Mevcut";
         public static string ImageLimitSucceed = " Fotograf Eklendi";
 
-        
+        public static string AccessTokenCreated = "Token Olusturuldu";
+
+        public static string UserRegistered = "Kayit Basarili";
+        public static string UserNotFound = "Kullanici Bulunamadi";
+        public static string PasswordError = "Hatali Sifre";
+        public static string SuccessfulLogin = "Giris Basarili";
+        public static string UserAlreadyExists = "Bu Kullanici Adi Mevcut";
     }
 }
