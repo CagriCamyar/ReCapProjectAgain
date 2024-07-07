@@ -24,7 +24,7 @@ namespace Business.DependencyResolvers.Autofac
             containerBuilder.RegisterType<CarManager>().As<ICarService>().SingleInstance();
             containerBuilder.RegisterType<EfCarDal>().As<ICarDal>().SingleInstance();
             containerBuilder.RegisterType<CarImageManager>().As<ICarImageService>().SingleInstance();
-            containerBuilder.RegisterType<EfCarImageDal>().As<ICarImageService>().SingleInstance();
+            containerBuilder.RegisterType<EfCarImageDal>().As<ICarImageDal>().SingleInstance();
             containerBuilder.RegisterType<FileHelperManager>().As<IFileHelper>().SingleInstance();
             containerBuilder.RegisterType<RentalManager>().As<IRentalService>().SingleInstance();
             containerBuilder.RegisterType<EfRentalDal>().As<IRentalDal>().SingleInstance();
