@@ -18,6 +18,8 @@ namespace Business.Constants
         public static string GetCar = "Sectiginiz Araba : ";
         public static string InvalidName = "Eklemek Istenen Aracin Adi 3 Harften Kisa Olamaz";
         public static string InvalidPrice = "Eklemek Istenen Aracin Ucreti 0(sifir)dan Kucuk veya Esit Olamaz";
+        public static string CarCountOfBrandError = "Bu markada en fazla 10 adet arac olabilir";
+        public static string CarNameAlreadyExist = "Bu isimde bir arac zaten mevcut";
 
         public static string BrandMissed = "Markaya Ait Arac Bulunamamistir.";
         public static string GetBrand = "Sectiginiz Marka : ";
@@ -69,6 +71,10 @@ namespace Business.Constants
         public static string UserNotFound = "Kullanici Bulunamadi";
         public static string PasswordError = "Hatali Sifre";
         public static string SuccessfulLogin = "Giris Basarili";
-        public static string UserAlreadyExists = "Bu Kullanici Adi Mevcut";
+        public static string UserAlreadyExists = "Bu Kullanici Mevcut";
+
+        public static string? AuthorizationDenied = "Bu islem icin yetkiniz yok";
+
+        
     }
 }

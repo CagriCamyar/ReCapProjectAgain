@@ -77,7 +77,7 @@ namespace ConsoleUI
             {
                 foreach (var customer in result.Data)
                 {
-                    Console.WriteLine(customer.FirstName + " " + customer.LastName + " " + customer.CompanyName + " " + customer.Email + " " + customer.Password);
+                    Console.WriteLine(customer.FirstName + " " + customer.LastName + " " + customer.CompanyName + " " + customer.Email);
                 }
             }
             else

@@ -9,7 +9,7 @@ namespace Entities.Concrete
 {
     public class Rental : IEntity
     {
-        public int RentId { get; set; }
+        public int RentalId { get; set; }
         public int CarId { get; set; }
         public int UserId { get; set; }
         public DateTime RentDate { get; set; } = DateTime.Now;

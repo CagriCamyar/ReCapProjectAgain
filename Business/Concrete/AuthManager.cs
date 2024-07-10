@@ -35,7 +35,7 @@ namespace Business.Concrete
             _userService.Add(user);
             return new SuccessDataResult<User>(user, Messages.UserRegistered);
         }
-
+            
         public IDataResult<User> Login(UserForLoginDto userForLoginDto)
         {
             var userToCheck = _userService.GetByMail(userForLoginDto.Email);
@@ -65,8 +65,8 @@ namespace Business.Concrete
         {
             var claims = _userService.GetClaims(user);
             var accessToken = _tokenHelper.CreateToken(user, claims);
-            return new SuccessDataResult<User>(user, Messages.AccessTokenCreated);
+            return new SuccessDataResult<AccessToken>(accessToken, Messages.AccessTokenCreated);
         }
 
-    }
+    } 
 }

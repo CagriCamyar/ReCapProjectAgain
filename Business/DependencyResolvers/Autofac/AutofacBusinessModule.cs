@@ -5,6 +5,8 @@ using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Helpers.FileHelpers;
 using Core.Utilities.Interceptors;
+using Core.Utilities.Security.Jwt;
+using Core.Utilities.Security.JWT;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using System;
@@ -28,6 +30,10 @@ namespace Business.DependencyResolvers.Autofac
             containerBuilder.RegisterType<FileHelperManager>().As<IFileHelper>().SingleInstance();
             containerBuilder.RegisterType<RentalManager>().As<IRentalService>().SingleInstance();
             containerBuilder.RegisterType<EfRentalDal>().As<IRentalDal>().SingleInstance();
+            containerBuilder.RegisterType<EfUserDal>().As<IUserDal>().SingleInstance();
+            containerBuilder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
+            containerBuilder.RegisterType<AuthManager>().As<IAuthService>().SingleInstance();
+            containerBuilder.RegisterType<JwtHelper>().As<ITokenHelper>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

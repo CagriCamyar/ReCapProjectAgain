@@ -27,7 +27,8 @@ namespace DataAccess.Concrete.EntityFramework
                                  FirstName = u.FirstName,
                                  LastName = u.LastName,
                                  Email = u.Email,
-                                 Password = u.Password
+                                 PasswordHash = u.PasswordHash,
+                                 PasswordSalt = u.PasswordSalt,
                              };
                 return result.ToList();
             }

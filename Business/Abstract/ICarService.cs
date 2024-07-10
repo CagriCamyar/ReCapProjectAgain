@@ -20,7 +20,7 @@ namespace Business.Abstract
         IResult DailyPriceMoreThanZero(Car car);
         IResult Add(Car car);
         IDataResult<List<CarDetailDto>> GetCarDetails();
-
+        IResult AddTransactionalTest(Car car);
 
     }
 }
